@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bpmn-js-properties-panel extension demo</title>
+
+    <link rel="stylesheet" href="css/diagram-js.css"/>
+    <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/app2.css"/>
+</head>
+<body>
+<div class="content" id="js-drop-zone">
+
+    <div class="message intro">
+        <div class="note">
+            Drop BPMN diagram from your desktop or <a id="js-create-diagram2" href>create a new diagram</a> to get
+            started.
+        </div>
+    </div>
+
+    <div class="message error">
+        <div class="note">
+            <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
+
+            <div class="details">
+                <span>cause of the problem</span>
+                <pre></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="canvas" id="js-canvas"></div>
+    <div id="js-properties-panel"></div>
+</div>
+
+
+<div class="io-import-export">
+
+    <ul class="io-import io-control io-control-list io-horizontal">
+        <li>
+            <button title="open BPMN diagram from local file system">
+                <span><img src="ic_open.svg" class="icon-actions"></span>
+            </button>
+        </li>
+        <li class="vr" style="margin-left: 2px"></li>
+        <li>
+            <a id="js-create-diagram" href title="create BPMN diagram">
+                <img src="ic_add_circle.svg" class="icon-actions">
+            </a>
+        </li>
+        <li class="vr" style="margin-left: 2px"></li>
+        <li>
+            <a id="js-download-diagram" href title="download BPMN diagram">
+                <img src="ic_save.svg" class="icon-actions">
+            </a>
+        </li>
+    </ul>
+
+    <!--[if !IE]><!-->
+    <ul class="io-export io-control io-control-list io-horizontal">
+        <li>
+            <a target="_blank" href="#" class="download" title="download BPMN diagram" jswidget="downloadBPMN"
+               data-track="diagram:download-bpmn" download="diagram.bpmn">
+                <span class="icon-download"></span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="#" class="download" title="download as SVG image" jswidget="downloadSVG"
+               data-track="diagram:download-svg" download="diagram.svg">
+                <span class="icon-picture"></span>
+            </a>
+        </li>
+    </ul>
+    <!--<![endif]-->
+</div>
+
+<!--
+<ul class="buttons">
+    <li>
+        download
+    </li>
+    <li>
+        <a id="js-download-diagram" href title="download BPMN diagram">
+            BPMN diagram
+        </a>
+    </li>
+    <li>
+        <a id="js-download-svg" href title="download as SVG image">
+            SVG image
+        </a>
+    </li>
+</ul>-->
+
+<script src="index.js"></script>
+</body>
+</html>

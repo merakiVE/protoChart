@@ -1,0 +1,29 @@
+{
+  "name": "Cvdi",
+  "prefix": "cvdi",
+  "uri": "http://meraki.ve",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "NeuronActions",
+      "extends": [
+        "bpmn:Task"
+      ],
+      "properties": [
+        {
+          "name": "neuron",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "action",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}
