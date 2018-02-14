@@ -539,6 +539,13 @@ textarea.error-log:hover {
 }
 
 .icon-save {
-    background-image: url("ic_save.svg") ;
+    content: url("ic_save.svg") ;
+}
+.icon-open {
+    content: url("ic_open.svg");
+}
+
+.icon-add{
+    content: url("ic_add_circle.svg");
 }
 

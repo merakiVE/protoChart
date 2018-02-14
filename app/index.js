@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.localStorage.setItem('neurons_data', JSON.stringify(response.data.data));
             })
             .catch((err) => {
+                console.log(err);
                 alert("Error no se pudo obtener la data de los neurons");
             });
 
